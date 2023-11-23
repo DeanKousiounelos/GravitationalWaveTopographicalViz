@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dean Kousiounelos</title>
+    <link rel="icon" type="image/x-icon" href="Images/exarhos_a_fine_arts_logo_with_two_black_holes_in_orbit_of_eacho_b2f0e814-0d91-41db-a7bc-c820c1715172.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href=style.css>
+    <style>
+                * {
+        box-sizing: border-box;
+        }
+        .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        }
+        .column {
+        float: left;
+        width: 33%;
+        padding: 10px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+        body,
+        h1
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", font-size: 25px ; 
+        }
+
+        body,
+        html {
+            height:100%;
+            width:100%;
+            line-height: 1.8;
+            font-size: 17px;
+            position: absolute;
+            /* min-width:1000px; */
+            height:auto;
+        }
+
+        /* Create a Parallax Effect */
+        .bgimg-1,
+        .bgimg-2{
+            background-attachment: fixed;
+            background-position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(243, 237, 237)55)
+        },
+
+        .bgimg-3 {
+            background-attachment: fixed;
+            background-position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(0, 0, 0)
+        }
+
+        /* First image (Logo. Full height) */
+        .bgimg-1 {
+            background-image: url("Images/exarhos_a_background_with_distorted_fabric_of_space_time_topogr_c72670b2-2b63-42dc-b8e9-0f828bd4cbb3.png"); 
+            min-height: 100%
+            width=128px 
+            height=128px;
+            ;
+        }
+    s
+        .w3-wide {
+            letter-spacing: 4px;
+        }
+
+        .w3-hover-opacity {
+            cursor: pointer;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 5000px) {
+
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+                min-height: 700px;
+            }
+        }
+
+        /* Set text colors */
+        .white-text {
+            color: #ffffff;
+        }
+
+        .black-text {
+            color: #141212;
+        }
+        .section-header {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+
+<body style="background-color:#f9f9f9;">
+
+<!-- Navigation (sit on top) -->
+<div class="w3-top">
+    <div class="w3-row w3-black" style="text-align:center; font-size:2vw">
+      <div class="w3-col" style="width:20%">
+        <a href="#intro" class="w3-button w3-block w3-white">INTRODUCTION</a>
+      </div>
+      <div class="w3-col" style="width:20%">
+        <a href="#results" class="w3-button w3-block w3-white">METHODS</a>
+      </div>
+      <div class="w3-col" style="width:20%">
+        <a href="#scicom" class="w3-button w3-block w3-white">SCI COM</a>
+      </div>
+      <div class="w3-col" style="width:20%">
+        <a href="#whatsnext" class="w3-button w3-block w3-white">WHAT'S NEXT?</a>
+      </div>
+      <div class="w3-col" style="width:20%">
+        <a href="#aboutme" class="w3-button w3-block w3-white">ABOUT ME</a>
+      </div>
+    </div>
+  </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container" id="home">
+        <div class="w3-display-middle black-text" style="white-space:break-word;">
+            <span class="w3-center w3-padding-small w3-xxlarge w3-wide"><b>Topographical Data Visualization aids in the understanding of Black Hole Mergers.</b></span>
+        </div>
+        <div class="w3-display-bottomleft w3-center w3-padding-large">
+            <span class="w3-text-black">Image credit: Dean Kousiounelos</span>
+            
+        </div>
+    </div>
+
+   <!-- <iframe class="bgimg-2 " width = 850px, height='700px' src="equipotentialplotnegative(3).html" frameborder="0" style="display:block; margin-left: auto; margin-right: auto; border:none;"></iframe> -->
+<!-- Intro -->
+    <div class="w3-content w3-padding-64" id="intro">
+        <div class="w3-content">
+            <h3 class="w3-center"><b>Introduction</b></h3>
+            <p>Telling the life story of binary stars is difficult and computationally expensive given the complexity of their evolution and the many 
+                permutations of possible stellar outcomes. In order to gain deeper insight into pathways of stellar evolution, we use the Binary Population Synthesis (BPS) 
+                code, POSYDON, to accurately simulate large populations of binary interactions and yield statistical properties without such a computationally expensive budget. 
+                The inner structure of this code is an intermingled network of simulations such as the Modules for Experiments in Stellar Astrophysics (MESA) and algorithmic analysis of stellar 
+                evolution data (<a href="https://arxiv.org/pdf/2202.05892.pdf">Fragos et al. 2023</a>). This data can help many scientists understand how binary stars evolve. Furthermore, we begin to develop a story that describes how these 
+                binaries become compact objects (CC) and other extreme stellar objects; the progenitors of gravitational wave sources.</p> 
+
+                <p> Despite having such a tool, fully grasping the binary stellar evolution story relies on interpreting data presentation. Hence, we employ 
+                visualization and illustrative methods to enhance data comprehension and convey the stellar narrative immediately upon data output. To aid 
+                in the analysis of data and relay the evolutionary narrative to the public, a visualization component must be developed in the POSYDON code. 
+            </p>
+        <br> 
+    <iframe title="Interactive Equipotential Surface Plot" class="bgimg-2 w3-display-container" width = 800px, height='50px' src="equipotentialplotnegative(3).html" frameborder="0" style="display:block; margin-left: auto; margin-right: auto; border:none;"></iframe> 
+         <br>
+ <figcaption style="color:rgb(0, 0, 0); font-style: italic; padding 2px; text-align: center; font-size:12px;"> Interactive visualization of the equipotential surface of a binary
+        system based on the mass ratio. Made with plotly using source code from <a href="https://github.com/zingale/astro_animations">zingzale</a> on Github</figcaption>
+ 
+        <br>
+
+    </div>
+    <!-- results -->
+    <div class="w3-content w3-padding-64" id="results">
+        <div class="w3-content">
+            <h3 class="w3-center"><b>Methods</b></h3>
+            <p>
+                The development of our visualization tool involved a comprehensive approach, integrating both physical and computational materials. An essential goal was <b>to create visualizations that not only facilitate scientific research for experts
+                but also effectively communicate scientific concepts to the broader public</b>. To achieve both of these objectives, the
+                methods employed can be categorized into two main approaches: illustrative and computational. By combining the
+                strengths of both approaches, <b>we successfully established an intuitive and coherent visual framework that effectively
+                merges the power of illustrative representations with the precision of computational visualization.</b>
+            </p>
+            <br>
+            <h3 class="w3-center"><i>Illustrative Methods</i></h3>
+            <p>
+                Prior to computational work, initial illustrations were pivotal in creating the stellar evolution visualization tool. They depicted evolution stages and events while offering a flexible foundation for updates. 
+                Crafted with varying pencil hardness, archival ink pens, and color pencils in a muted palette, each detail was meticulously attended to. Spheres used compasses, and curves employed a flexible curve ruler. 
+                High-quality scans used 250 GSM white Stonehenge paper. 
+                <figure>
+                    <img src="Images/Untitled_2023-08-16_19-41-51.png" class="center" style="display: block; margin-left: auto; margin-right: auto; width: 80%;">
+                
+                    <figcaption style="color:rgb(0, 0, 0); font-style: italic; padding 2px; text-align: center; font-size:12px;"> Early Illustrations of the 
+                        <b>Z</b>ero <b>A</b>ge <b>M</b>ain <b>S</b>equence (<b>ZAMS</b>) and the <b>R</b>oche <b>L</b>obe <b>O</b>ver<b>F</b>low (<b>RLOF</b>) stage. 
+                        These illustrations (left) were completed with <i>Derwent</i> color pencils on 250 GSM <i> Stonehenge </i> paper and re-created as vector-like
+                        illustrations using Adobe Illustrator and Photoshop (right).  
+                    Credit: Northwestern. Visualization by Dean Kousiounelos .</figcaption>
+                </figure>
+                Adobe Illustrator converted scans to vector images, ensuring resolution quality and customization. Standardized dimensions guaranteed smooth computation for the final tool. 
+                Incorporating the essence of traditional visualizations like Van Den Heuvel diagrams, we aimed to develop a more
+                comprehensive and detailed visual tool that is fit for POSYDON data. The layout facilitates a portrayal of binary star
+                evolution, ensuring that researchers can easily grasp the relationships and transitions between different evolutionary
+                stages in the evolutionary narrative. Stars are color-coded by temperature in the binary system, and their sizes are
+                relative. We designed a minimalist and representative motif for accreting matter, accommodating
+                the in-spiral of such matter for stages such as Roche lobe overflow (RLOF). A 3-dimensional perspective was applied
+                to the Roche lobe, aiding in its dimensional understanding, and enabling future visualization coding. However, the
+                spheres are kept nearly 2 dimensional to maintain the balance of informative but minimalist motifs present throughout
+                the visualization. Simplified potential diagrams (<a href="https://ui.adsabs.harvard.edu/abs/2023pbse.book.....T/abstract">Tauris & van den Heuvel 2023</a>), inspired by those in The Physics
+                of Binary Star Evolution, were chosen for clarity, as the equipotential surfaces present in each event stage acted as a
+                visual link between the RLOF event with its physical effect in the gravitational field of each star. The layout of the
+                visualization adds visual dimensionality to the algorithmic diagram, Fig. 1 (Fragos et al. 2023). The Illustration of
+                this tool, however, just represents a singular end result. BinaryStory must be able to be auto-generated with respect
+                to any population run of the POSYDON code. Therefore, it adopts a computational contribution that allows the
+                outcome of the visualization to be based on the POSYDON output data.
+            </p>
+            <br>
+                <h3 class="w3-center"><i>Computational Methods</i></h3>
+                <p>
+                    After creating the visualizations, the next step was developing an interactive version using the POSYDON code.
+Leveraging Python packages such as Matplotlib, PIL, Cv2, we created an integrated Van Den Heuvel diagram gen-
+erator. First, a BPS model run, with specific keyword arguments, and a large population yielded a large Pandas
+DataFrame (DF). The function getstar returns one star from the population and displays its important information,
+such as state and event names, step names, mass, state, separation, etc., for the following visualization functions.
+Having established a DF, MiniVizView, with relevant stellar evolution information, we assign a function named
+getimage which receives the DF and extracts pertinent information for constructing a Van Den Heuvel diagram. Each
+chartobject acts as an image in the visualization and requires an axis and an image as input.
+<br>
+<figure>
+    <img src="Images/index42.png" class="center" style="display: block; margin-left: auto; margin-right: auto; width: 80%;">
+    <figcaption style="color:rgb(0, 0, 0); font-style: italic; padding 2px; text-align: center; font-size:12px;"> A new Van Den Heuvel diagram, with a timescale, that is generated directly
+         from the population synthesis data from POSYDON. It depicts a zero-age main sequence binary (ZAMS) evolution to a merger, including the onset of Roche lobe overflow (RLOF), 
+         the common envelope stage (oCE1), as well as in-spiral and winds down steps before the merged stage.
+    Credit: Northwestern. Visualization by Dean Kousiounelos .</figcaption>
+</figure>
+<br>
+The function vdh is
+the integral function that created the Van Den Heuvel Diagrams. It iterates over columns, searches for corresponding
+visualizations in a database based on a specific file path that is stitched together by the output of the getimage
+function, and places connected chart objects in chronological order. During this process, it uses PIL to turn the image
+into a numpy array of pixels with RGB values. 
+<br>
+<figure>
+    <img src="Images/RLOFColorchart.png" class="center" style="display: block; margin-left: auto; margin-right: auto; width: 65%;">
+    <img src="Images/ZAMS3000k.png" class="center" style="display: block; margin-left: auto; margin-right: auto; width: 65%;">
+    <figcaption style="color:rgb(0, 0, 0); font-style: italic; padding 2px; text-align: center; font-size:12px;"> 
+    (Top)The RGB, HS, and Hex codes for the visualizations. These codes allow us to change the color of each star
+    in the Van Den Heuvel diagram with an accurate color-to-effective temperature image. (bottom) Star1 is a 3000 K star
+    and a specific RGB value is assigned to it. The hue is moved to be the same saturation as the star on the right so that the color scheme is balanced. Credit: Northwestern. Visualization by Dean Kousiounelos .</figcaption>
+</figure>
+<br>
+
+A list of effective temperatures of the stars at each stage is passed
+to a function that uses a database of corresponding Hexadecimal (hex) and RGB codes based on spectral type and
+temperature (<a href="https://arxiv.org/abs/2101.06254">Harre & Heller 2021</a>). This is then used to color each star in the diagram. The visualizations, thus, hold
+the temperature and color information of the stars in the binary system. The function utilizes connectionpatches as the
+connecting pathways between each stage/event. The function accounts for null results and provides researchers with
+appropriate messages to notify if a visualization doesn’t exist or isn’t found. At each time step, points are plotted on a
+vertical line adjacent to the chart, introducing a temporal dimension to the visualization. The vdh function facilitates
+the creation of a well-organized timeline, documenting the stellar evolution of each binary system based solely on the
+output data from POSYDON.
+                </p>
+                <br>    
+
+    <!-- scicom -->
+    <div class="w3-content w3-padding-64" id="scicom">
+        <div class="w3-content">
+            <h3 class="w3-center"><b>Scientific Communication</b></h3>
+            <p>
+                BinaryStory plays a pivotal role in advancing scientific communication regarding the complex processes of stellar evolution. Through its visual representations,
+                it effectively conveys information as <b>an informative graphic</b>, distinct from editorial illustration (<a href="https://blogs.scientificamerican.com/sa-visual/visualizing-science-illustration-and-beyond/">Christiansen 2021</a>). Striking a balance between raw data display and 
+                illustrative elements, BinaryStory deliberately adopts an illustrative approach to engage viewers with the data content. The visual appeal of BinaryStory lies in its simplicity, adhering to Tufte's
+                 design principles, such as data-to-ink ratio (Tufte 2016). Thoughtfully curated color aesthetics avoid high-contrast hues and discordant palettes, ensuring a coherent and visually captivating presentation. 
+                 <b>BinaryStory directly integrates with data, departing from conventional post-processing methods for graphics.</b> It swiftly saves visuals in formats like png, jpg, or pdf, perfect for posters, 
+                articles, and presentations, enhancing the binary stellar evolution narrative. 
+                The resolution quality of the visualization enables easy import to graphics editors like Adobe Illustrator, 
+                allowing customization for scientific communication. <b>As a valuable tool, 
+                BinaryStory facilitates clear and captivating depiction of binary star evolution across diverse formats, 
+                providing astronomers with the means of illustrating the compelling story of binary star systems.</b>
+            </p>
+            <br>
+    
+
+<!-- Future Implications -->
+     <div class="w3-content w3-padding-64" id="whatsnext">
+        <div class="w3-content">
+            <h3 class="w3-center"><b>Conclusion and Further Work</b></h3>
+            <p><b>BinaryStory is a user-friendly, data integrated, tool that enhances comprehension of binary star systems by bridging complex data and illustrative elements for effective scientific communication.</b> Its versatility and accessibility are 
+                valuable for researchers conveying the narrative of binary stellar evolution. 
+                Future developments could include <b>interactive 3D visuals</b> to further enhance user experience. 
+                Our study focused on one indexed star's evolution, 
+                but specialized <b>2-D Grid plots</b> could elucidate channel contributions and simulation accuracy for the entire population. Beyond visualization, BinaryStory transforms communication by merging data analysis with storytelling to deepen understanding of binary stellar evolution.
+            </p>
+    </div>
+<!-- References -->
+<div class="w3-content w3-padding-64 Psection" id="acknowledgements">
+    <h3 class="w3-center"><b>References</b></h3>
+    <p class="w3-center"> 
+        <p>Christiansen, J. 2021, Visualizing science: Illustration and
+        beyond, , , accessed: 2023-8-9</p>
+        <p>Fragos, T., Andrews, J. J., Bavera, S. S., et al. 2023, ApJS,
+        264, 45</p> 
+        <p>Harre, J.-V., & Heller, R. 2021, Astron. Nachr.</p>
+        <p>Tauris, T. M., & van den Heuvel, E. P. J. 2023, Physics of
+        Binary Star Evolution. From Stars to X-ray Binaries and
+        Gravitational Wave Sources,
+        doi:10.48550/arXiv.2305.09388</p>
+        <p>Tufte, E. 2016, in Diagrammatik-Reader, ed. B. Schneider,
+        C. Ernst, & J. W ̈opking (Berlin, Boston: De Gruyter),
+        219–230</p>
+    </p> 
+</div>
+
+    <!-- About Me -->
+    <div class="w3-content w3-padding-64" id="aboutme">
+        
+        <div class="w3-content">
+            <h3 class="w3-center"><b>About Me</b></h3>
+            <div class="w3-row">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <img src="Images/DeanPainting2.JPG" class="w3-round w3-image w3-hover-opacity-on" alt="Photo of Me"
+                    width=80% height=80%>
+                </div>
+        <p class="w3-margin-right"> <br>
+            My name is <a href="https://www.deanmichaelart.com/gallery/astronomical-89phb">Dean kousiounelos </a> and I'm a rising junior at Lake Forest 
+            College double majoring in Physics and Art. 
+            This summer I had the great opportunity to 
+            work with Dr. Seth Gossage and Dr. Vicky Kalogera 
+            on a visualization code for binary population 
+            synthesis data from <a href="https://posydon.org/"> POSYDON. </a>
+            <br>
+            I am working in the nexus of art and science, looking to bridge a gap
+            that has long been defined by both artists and scientists alike through
+            data visualization and graphic illustration. By creating
+            visualizations that are integrated with the POSYDON data, a stellar story emerges, 
+            bridging both the quantitative and the qualitative aspects of the evolutionary narrative.
+             <br>
+             <b>Contact info:</b>  kousiounelosdm@lakeforest.edu</p>
+
+    </div>
+
+<!-- Acknowledgements -->
+    <div class="w3-content w3-padding-64 Psection" id="acknowledgements">
+        <h3 class="w3-center"><b>Acknowledgements</b></h3>
+        <p class="w3-center"> I want to thank <a href="https://sgossage.github.io/">Dr. Seth Gossage</a> and <a href="https://sites.northwestern.edu/vickykalogera/">Dr. Vicky Kalogera</a> for their mentorship;
+            the REU leaders, <a href="https://faculty.wcas.northwestern.edu/aaron-geller/index.html">Dr. Aaron Geller</a> and <a href="https://sites.northwestern.edu/emilyleiner/"> Dr. Emily Leiner</a>, and my cohort for their valuable support. This material is based upon work supported by the National Science Foundation under grant No.AST 2149425, a Research Experience s for Undergraduates (REU) grant awarded to <a href="https://ciera.northwestern.edu/"> CIERA</a> at Northwestern University. Any opinions, findings, conclusions, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+            This research was supported in part through the computational resources and staff contributions provided for the Quest high-performance computing facility at Northwestern University which is jointly supported by the Office of the Provost, the Office for Research, and Northwestern University Information Technology.
+        </p> 
+    </div>
+    <div class="row">
+        <div class="column">
+          <img src="Images/NSF_logo.png" alt="NSF" style="width:100%", class="left">
+        </div>
+        <div class="column">
+          <img src="Images/CIERA_vertical_lockup_purple_0031kfx0s0.png" alt="CIERA" style="width:100%", class="center">
+        </div>
+        <div class="column">
+          <img src="Images/POSYDONinverse.png" alt="posydon" style="width:100%", class="right">
+        </div>
+      </div>
+      
+
+<br>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+                class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+  
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-hover-opacity-off">
+        <div class="w3-content" style="max-width:200px">
+            <a href="#home" class="w3-button w3-black"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">w3.css</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Change style of navbar on scroll
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+    
+    </script>
+
+</body>
+
+</html>
